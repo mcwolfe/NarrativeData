@@ -1,0 +1,131 @@
+```{r setup, include=FALSE}
+
+knitr::opts_knit$set(root.dir = "../R-test/networks")  # Set root directory
+library(igraph)
+
+
+```
+color_map <- c(room = "lightblue", creature = "salmon", resource = "gold")
+node_colors <- color_map[V(g)$type]
+
+```{r}
+g <- make_empty_graph(directed = FALSE)
+```
+
+# Let' make rooms
+
+```{r}
+g <- add_vertices(g, 9, 
+  name = c("hallway", "kitchen", "living_room", "bedroom", "bathroom","study","back_yard","garage","front_yard"),
+  type = "room")
+```
+
+# And doors
+```{r}
+g <- add_edges(g, c(
+  "hallway","kitchen", 
+  "hallway","living_room", 
+  "hallway","bedroom", 
+  "hallway","bathroom",
+  "living_room","study",
+  "living_room", "back_yard",
+  "back_yard","garage",
+  "garage","front_yard",
+  "front_yard","hallway"),
+  relation = "door")
+
+plot(g, 
+  vertex.color = "lightblue",
+  vertex.size = 30,
+  vertex.label.cex = 0.8,
+  layout = layout_with_fr(g))
+```
+# Adding the cat
+
+```{r}
+g <- add_vertices(g, 1, name = "cat", type = "creature")
+g <- add_edges(g, c("cat", "living_room"), relation = "is_in")
+
+plot(g, 
+  vertex.color = "lightblue",
+  vertex.size = 30,
+  vertex.label.cex = 0.8,
+  layout = layout_with_fr(g))
+```
+```{r}
+# Set colors based on node type
+node_colors <- ifelse(V(g)$type == "room", "lightblue", "salmon")
+
+plot(g,
+  vertex.color = node_colors,
+  vertex.size = 30,
+  vertex.label.cex = 0.8,
+  edge.label = E(g)$relation,
+  edge.label.cex = 0.7,
+  layout = layout_with_fr(g))
+```
+# Some analytics
+
+```{r}
+shortest_paths(g, "living_room", "bathroom")$vpath
+betweenness(g)
+degree(g)
+
+```
+```{r}
+door_edges <- E(g)[E(g)$relation == "door"]
+doors_only <- subgraph_from_edges(g, door_edges)
+shortest_paths(doors_only, "living_room", "bathroom")$vpath
+betweenness(doors_only)
+```
+```{r}
+cat_edges <- E(g)[incident(g, "cat") & E(g)$relation == "is_in"]
+cat_location <- ends(g, cat_edges)[1, 2]
+```
+
+```{r}
+
+path_history <- c()
+doors_only <- subgraph_from_edges(g, E(g)[E(g)$relation == "door"])
+for (turn in 1:10) {
+  # Find the is_in edge and both its endpoints
+  cat_edge_ids <- which(E(g)$relation == "is_in" & 
+    (ends(g, E(g))[,1] == "cat" | ends(g, E(g))[,2] == "cat"))
+  
+  endpoints <- ends(g, cat_edge_ids)[1,]
+  cat_location <- endpoints[endpoints != "cat"]
+  
+  # Pick a random neighbouring room
+  new_location <- sample(names(neighbors(doors_only, cat_location)), 1)
+  
+  # Update the graph
+  g <- delete_edges(g, cat_edge_ids)
+  g <- add_edges(g, c("cat", new_location), relation = "is_in")
+  
+  cat(paste("Turn", turn, "- Cat moves from", cat_location, "to", new_location, "\n"))
+  path_history <- c(path_history, cat_location)
+}
+```
+```{r}
+# Count visits
+visit_counts <- table(path_history)
+
+# Map counts to colors for all nodes (0 for non-room nodes)
+heat <- sapply(V(g)$name, function(n) {
+  if (n %in% names(visit_counts)) visit_counts[[n]] else 0
+})
+
+# Create a color palette - white (cold) to red (hot)
+max_visits <- max(heat)
+node_colors <- ifelse(heat == 0, "lightgrey", 
+  heat.colors(max_visits + 1, rev = TRUE)[heat + 1])
+
+plot(g,
+  vertex.color = node_colors,
+  vertex.size = 30,
+  vertex.label.cex = 0.8,
+  edge.label = E(g)$relation,
+  edge.label.cex = 0.7,
+  layout = layout_with_fr(g))
+```
+

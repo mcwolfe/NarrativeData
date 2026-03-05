@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Images (keeping repo lightweight)
+*.png
+
+# VS Code
+*.code-workspace
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

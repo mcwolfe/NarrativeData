@@ -1,0 +1,166 @@
+---
+title: "R Notebook"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+# Linear Regression
+
+Kan två (eller fler) numeriska mätvärden beskrivas av ett linjärt samband kx+m?
+
+```{r}
+library(ggplot2)
+londHus <- read.csv("london_houses.csv")
+prisYta <- lm(Price.... ~ Square.Meters, data = londHus)
+summary(prisYta)
+```
+
+```{r}
+plot(londHus$Price.... ~ londHus$Square.Meters)
+abline(prisYta, col = "red")
+```
+
+```{r}
+
+# Group by a categorical variable (e.g., "Neighborhood") and fit linear models
+grouped_models <- by(londHus, londHus$Neighborhood, function(df) {
+  lm(Price.... ~ Square.Meters, data = df)
+})
+
+# View the results for each group
+lapply(grouped_models, summary)
+
+```
+
+# Andra tester
+
+```{r}
+kruskal.test(Price.... ~ Neighborhood, data = londHus)
+
+wilcox.test(Price.... ~ Garden, data = londHus)
+```
+
+# Flera dimensioner
+
+## chi2-test
+
+```{r}
+gard_heat_balc <- with(londHus, table(Garden, Heating.Type, Balcony))
+
+# gard_heat_balc
+
+summary(gard_heat_balc)
+```
+
+## Anova
+
+```{r}
+# Two-way ANOVA with two categorical factors (garden and balcony) and one numerical variable (price)
+anova_result <- aov(Price.... ~ Garden * Balcony, data = londHus)
+
+# Summary of the ANOVA result
+summary(anova_result)
+```
+
+# GGPlot2
+
+```{r}
+ggplot(londHus, aes(x = Price....)) +
+  geom_histogram(binwidth = 200000, fill = "blue", color = "black") +
+  labs(title = "Histogram of House Prices", x = "Price (£)", y = "Frequency")
+```
+
+```{r}
+# Simple boxplot for Price across different Property Types
+ggplot(londHus, aes(x = Property.Type, y = Price....)) +
+  geom_boxplot(fill = "lightblue", color = "darkblue") +
+  labs(title = "Price Distribution by Property Type", x = "Property Type", y = "Price (£)")
+```
+
+```{r}
+# Boxplot comparing Price between Garden and Property Type
+ggplot(londHus, aes(x = Property.Type, y = Price...., fill = Garden)) +
+  geom_boxplot() +
+  labs(title = "Price by Property Type and Garden", x = "Property Type", y = "Price (£)")
+```
+
+```{r}
+# Boxplot comparing Price between Garden and Property Type
+ggplot(londHus, aes(x = Property.Type, y = Price...., fill = interaction(Garden, Balcony))) +
+  geom_boxplot() +
+  labs(title = "Price by Property Type and Garden", x = "Property Type", y = "Price (£)")
+```
+
+```{r}
+# Scatter plot with two factors (color and shape) and a continuous variable (Price)
+ggplot(londHus, aes(y = Price...., x = Square.Meters, color = Balcony, shape = Property.Type)) +
+  geom_point() +
+  labs(title = "Scatter Plot of Price vs Size, Colored by Balcony", y = "Price (£)", x = "Size (sq ft)")
+```
+
+```{r}
+# Scatter plot of Price vs. Size, with facets for Property Type and Garden
+ggplot(londHus, aes(x = Square.Meters, y = Price....)) +
+  geom_point(aes(color = Property.Type)) +
+  facet_grid(Garden ~ Property.Type) +
+  labs(title = "Price vs Size by Property Type and Garden", x = "Size (sq ft)", y = "Price (£)")
+```
+
+# Lite detektivarbete
+
+```{r}
+chelseaPrice <- subset(londHus, Neighborhood == "Chelsea")
+greenwichPrice <- subset(londHus, Neighborhood == "Greenwich")
+
+chelseaModel <- lm(chelseaPrice$Price.... ~ chelseaPrice$Square.Meters)
+gwModel <- lm(greenwichPrice$Price.... ~ greenwichPrice$Square.Meters)
+
+summary(chelseaModel)
+summary(gwModel)
+
+```
+
+```{r}
+# Filter data for Chelsea and Greenwich
+chelsea_data <- subset(londHus, Neighborhood == "Chelsea")
+greenwich_data <- subset(londHus, Neighborhood == "Greenwich")
+
+# Set up the plot
+plot(londHus$Square.Meters, londHus$Price...., type = "n", 
+     xlab = "Square Meters", ylab = "Price", 
+     main = "Price vs. Square Meters by Neighborhood")
+
+# Add points and regression lines for Chelsea
+points(chelsea_data$Square.Meters, chelsea_data$Price...., col = as.factor(chelsea_data$Property.Type), pch = 16)
+abline(lm(Price.... ~ Square.Meters, data = chelsea_data), col = "red")
+
+# Add points and regression lines for Greenwich
+points(greenwich_data$Square.Meters, greenwich_data$Price...., col = as.factor(greenwich_data$Property.Type), pch = 16)
+abline(lm(Price.... ~ Square.Meters, data = greenwich_data), col = "blue")
+
+# Add a legend
+legend("topright", legend = c("Chelsea", "Greenwich"), col = c("red", "blue"), pch = 16, title = "Neighborhood")
+```
+
+```{r}
+plot(londHus$Square.Meters, londHus$Price...., 
+     xlab = "Square Meters", ylab = "Price", 
+     main = "Price vs. Square Meters (Colored by Property Type)", 
+     pch = 16, col = as.factor(londHus$Property.Type))
+```
+
+```{r}
+#lm(formula = Price.... ~ Square.Meters * Property.Type * Neighborhood, data = londhus)
+
+summary(lm(formula = Price.... ~ Square.Meters * Property.Type, data = chelsea_data))
+summary(lm(formula = Price.... ~ Square.Meters * Property.Type, data = greenwich_data))
+
+```
+
+```{r}
+ggplot(londHus, aes(x = Square.Meters, y = Price....)) +
+  geom_point(aes(color = Neighborhood)) +
+  facet_grid(Neighborhood ~ Property.Type) +
+  labs(title = "Price vs Size by Property Type and Garden", x = "Size (sq ft)", y = "Price (£)")
+```

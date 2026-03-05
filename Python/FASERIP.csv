@@ -1,0 +1,100 @@
+character,F,A,S,E,R,I,P,Type,Flight,Armour,Ranged,Alignment
+Angel,20,30,10,30,10,6,10,Mutant,6,0,0,Hero
+Aurora,20,20,6,20,4,10,4,Mutant,150,0,0,Hero
+Beast,40,40,30,20,20,10,20,Mutant,0,0,0,Hero
+Black Knight,30,20,10,10,10,6,6,Human,0,10,0,Hero
+Box,30,30,75,75,20,10,10,Technological,40,50,0,Hero
+Captain America,50,40,20,30,10,40,10,Human,0,0,0,Hero
+Captain Marvel,10,20,6,30,6,10,6,Superhuman,3000,0,75,Hero
+Cloak,6,10,20,40,6,20,10,Superhuman,0,50,0,Hero
+Colossus,10,10,75,50,6,6,20,Mutant,0,50,0,Hero
+Cyclops,20,20,6,30,20,30,30,Mutant,0,0,50,Hero
+Dagger,20,20,6,30,10,10,10,Superhuman,0,0,20,Hero
+Daredevil,40,40,10,20,6,75,10,Human,0,0,0,Hero
+Doc Strange,10,20,6,30,10,75,10,Magical,40,0,50,Hero
+Nick Fury,40,20,10,30,20,20,10,Human,0,6,20,Hero
+Hawkeye,10,30,10,20,6,10,6,Human,0,0,20,Hero
+Hercules,100,20,100,100,10,10,30,God,0,20,0,Hero
+Hulk,30,10,100,75,2,6,30,Superhuman,0,75,0,Hero
+Human Torch,10,20,10,20,10,10,6,Superhuman,20,40,100,Hero
+Iceman,10,10,6,30,10,4,6,Mutant,6,30,30,Hero
+Invisible Woman,10,10,6,20,10,20,10,Superhuman,0,75,0,Hero
+Iron man,20,30,40,75,40,20,6,Technological,150,50,75,Hero
+Magneto,10,30,10,75,40,10,50,Mutant,30,0,0,Hero
+Marvel Girl,10,10,6,30,10,20,50,Mutant,30,0,40,Hero
+Mister Fantastic,10,6,6,20,50,20,30,Superhuman,0,30,0,Hero
+Mockingbird,20,20,6,10,20,6,6,Human,0,20,0,Hero
+Nightcrawler,20,50,6,30,10,20,20,Mutant,0,0,0,Hero
+Northstar,20,20,20,30,6,6,10,Mutant,3000,0,0,Hero
+Phoenix,10,10,10,40,10,30,75,Mutant,0,0,50,Hero
+Professor X,4,10,6,30,40,50,75,Mutant,0,100,0,Hero
+Puck,40,20,10,20,6,20,30,Superhuman,0,0,0,Hero
+Rogue,10,20,50,10,6,10,4,Mutant,20,40,0,Hero
+Shadowcat,20,10,6,20,30,10,6,Mutant,0,0,0,Hero
+Shaman,10,10,10,20,20,50,40,Magical,0,0,0,Hero
+She-Hulk,30,20,75,50,6,10,20,Superhuman,0,40,0,Hero
+Silver surfer,50,75,100,100,20,75,40,Superhuman,5000,75,100,Hero
+Spider-man,30,50,40,40,20,10,40,Superhuman,0,0,0,Hero
+Storm,20,30,6,50,6,20,10,Mutant,40,0,0,Hero
+Sub-Mariner,40,30,75,40,6,30,40,Superhuman,4,10,0,Hero
+Thing,40,10,75,75,10,10,30,Superhuman,0,40,0,Hero
+Thor,100,20,100,100,6,20,50,God,150,20,0,Hero
+Tigra,20,40,40,30,6,30,20,Superhuman,0,0,0,Hero
+Vindicator,6,40,30,20,10,20,10,Technological,150,50,40,Hero
+Wasp,10,20,10,20,20,20,10,Superhuman,4,0,30,Hero
+Wolverine,40,30,10,30,6,75,40,Mutant,0,0,0,Hero
+Wonder Man,10,30,100,75,6,6,6,Superhuman,10,50,0,Hero
+Annihulus,40,40,50,75,30,10,30,Alien,40,30,100,Villain
+Baron Mordo,6,6,6,30,10,30,50,Magical,0,0,50,Villain
+Beetle,10,10,30,20,20,30,6,Technological,10,20,20,Villain
+Blacklash,30,10,10,30,20,10,4,Technological,0,10,0,Villain
+Boomerang,20,30,10,20,10,10,6,Human,4,0,40,Villain
+Crimson Dynamo,30,40,50,75,10,20,10,Technological,10,50,40,Villain
+Doctor Doom,30,20,30,40,50,40,50,Technological,20,40,50,Villain
+Doctor Octopus,6,10,30,20,20,6,20,Technological,0,0,0,Villain
+Dreadnought,30,20,40,75,2,20,2,Robot,0,50,40,Villain
+Electro,10,20,20,50,10,20,6,Superhuman,0,40,0,Villain
+Hobgoblin,20,30,40,40,20,10,20,Technological,6,20,30,Villain
+Kingpin,30,10,20,40,10,20,10,Human,0,0,4,Villain
+Klaw,10,20,30,75,2,6,6,Superhuman,0,40,40,Villain
+Kraven,40,30,30,40,20,40,6,Superhuman,0,0,10,Villain
+Leader,10,10,6,30,50,30,40,Superhuman,0,0,40,Villain
+Lizard,20,30,40,50,4,10,30,Superhuman,0,10,0,Villain
+Loki,30,20,50,50,20,20,75,God,0,20,75,Villain
+Madcap,10,20,10,20,6,30,30,Superhuman,0,0,0,Villain
+Mandarin,30,20,10,30,40,10,10,Technological,0,0,30,Villain
+Mandroid,10,10,30,20,6,6,6,Technological,0,40,20,Villain
+Mastermind,4,6,4,30,10,10,100,Mutant,0,0,0,Villain
+Red Ghost,10,20,10,50,30,6,10,Superhuman,0,0,0,Villain
+Red Skull,20,20,10,30,30,20,75,Human,0,0,0,Villain
+Scorpion,30,40,40,40,6,6,10,Technological,0,20,30,Villain
+Titanium Man,30,30,50,75,10,20,10,Technological,75,40,50,Villain
+Ultron,20,30,50,100,40,10,4,Robot,0,1000,75,Villain
+Vulture,20,30,20,40,30,10,10,Technological,6,0,0,Villain
+Black Panther,50,40,20,30,10,30,20,Superhuman,0,0,0,Hero
+Black Widow,40,30,10,20,10,40,20,Human,0,0,20,Hero
+Falcon,30,30,10,30,10,10,20,Technological,20,0,0,Hero
+Hellcat,10,20,6,10,6,6,20,Human,0,0,0,Hero
+Moondragon,30,30,10,30,10,20,50,Superhuman,0,0,20,Hero
+Ms Marvel,10,20,50,40,10,20,30,Superhuman,20,40,0,Hero
+Quicksilver,10,100,10,30,20,6,10,Mutant,0,10,0,Hero
+Scarlet Witch,10,10,6,20,10,20,30,Mutant,0,0,0,Hero
+Starfox,10,20,40,50,20,6,30,Alien,150,10,0,Hero
+Swordsman,30,20,10,20,6,6,6,Human,0,30,0,Hero
+Crystal,10,20,10,20,10,10,6,Mutant,0,0,20,Hero
+Medusa,30,30,20,30,10,30,30,Mutant,0,0,0,Hero
+Power Man,30,10,40,50,10,20,6,Superhuman,0,40,0,Hero
+Stingray,10,30,50,40,20,10,10,Technological,4,30,0,Hero
+Thundra,50,20,50,20,6,10,6,Alien,0,6,0,Hero
+Firelord,75,100,50,100,30,50,30,Alien,1000,50,100,Villain
+Wingless Wizard,4,10,6,20,40,6,6,Technological,10,10,40,Villain
+Trapster,4,10,4,10,20,10,10,Technological,0,0,0,Villain
+Sandman,30,30,40,75,6,10,30,Superhuman,0,50,0,Villain
+Black Cat,10,20,6,20,10,10,20,Human,0,0,0,Hero
+Cobra,30,75,10,30,10,10,20,Superhuman,0,10,0,Villain
+Dagger,20,20,6,30,10,10,10,Superhuman,0,0,20,Hero
+Electra,40,30,10,30,10,40,20,Human,0,0,0,Hero
+Fly,20,40,30,40,10,75,10,Superhuman,10,0,50,Villain
+Gladiator,30,20,20,30,6,10,6,Technological,0,10,30,Villain
+Green Goblin,20,10,10,10,30,20,4,Technological,10,10,30,Villain
+Hydro man,20,10,30,75,6,10,30,Superhuman,0,50,20,Villain

@@ -1,0 +1,423 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_knit$set(root.dir = "../R-test")  # Set root directory
+library(pwr)
+
+df_tit <- read.csv("titanic.csv")
+df_imdb <- read.csv("imdb_data.csv")
+library(palmerpenguins)
+library(effectsize)
+library(ggplot2)
+
+```
+
+# Intro
+Datasets som används
+- titanic (df_tit)
+- Filmer (df_imdb)
+- diamonds (från ggplot2)
+- penguins (från palmerpenguins)
+
+# Steg 1 - Kartlägg
+
+str
+summary
+names
+table
+
+hist
+barplot
+
+OBS: Behövs någon rensas upp?
+
+enkel upprensning
+
+df_clean <- na.omit(df)
+
+
+
+```{r}
+# hur vill vi undersöka de olika dataseten?
+
+
+df_tit_clean <- na.omit(df_tit)
+
+summary(df_tit_clean)
+```
+
+```{r}
+# hur vill vi undersöka de olika dataseten?
+
+#df_imdb
+
+
+df_imdb_clean <- na.omit(df_imdb)
+summary(df_imdb_clean)
+
+
+```
+
+```{r}
+# hur vill vi undersöka de olika dataseten?
+
+# diamonds
+
+summary(diamonds)
+
+```
+
+```{r}
+# hur vill vi undersöka de olika dataseten?
+
+penguins_clean <- na.omit(penguins)
+summary(penguins_clean)
+
+```
+
+# Kategorier och värden
+
+boxplot
+hist
+
+tapply
+aggregate
+by
+
+inkluderade funktioner (urval)
+mean, median, sd, var, IQR, min, max, sum, summary
+
+```{r}
+# Värden och kategorier - undersökning
+
+tapply(df_tit$Fare, df_tit$Pclass, mean)
+tapply(df_tit$Fare, df_tit$Pclass, median)
+tapply(df_tit$Fare, df_tit$Pclass, sd)
+# 
+#aggregate(Fare~Pclass, data = df_tit, FUN = mean)
+# 
+# by(df_tit$Fare, df_tit$Pclass, summary)
+
+# boxplot(Fare~Pclass, data = df_tit)
+
+# stripchart(Fare ~Pclass, data = df_tit)
+
+#stripchart(Fare ~Pclass, data = df_tit, method = "jitter", vertical = TRUE)
+
+#ggplot(df_tit, aes(x=Pclass, y = Fare)) + geom_jitter()
+
+nuBreaks <- 30
+
+par(mfrow = c(1,2))
+hist(df_tit$Age[df_tit$Survived == 1],
+     breaks = nuBreaks,
+     main = "Survived",
+     xlab = "Age",
+     col = "green")
+
+hist(df_tit$Age[df_tit$Survived == 0],
+     breaks = nuBreaks,
+     main = "Did Not Survive",
+     xlab = "Age",
+     col = "red")
+
+```
+
+
+df$age_group <- cut(df$Age, 
+                    breaks = c(0, 10, 18, 25, 35, 45, 100),
+                    labels = c("child", "teen", "Under 25", "25-34", "35-44", "45+"))
+
+```{r}
+# Värden och kategorier - undersökning
+
+
+df_imdb_clean$ratingGroup <- cut(df_imdb_clean$averageRating,
+                                 breaks = c(0, 3, 6.5, 10),
+                                 labels = c("low", "medium", "high"))
+
+
+tapply(df_imdb_clean$gross, df_imdb_clean$ratingGroup, mean)
+boxplot(gross~ratingGroup, data=df_imdb_clean)
+
+
+```
+
+```{r}
+# Värden och kategorier - undersökning
+
+#str(diamonds)
+
+tapply(diamonds$price, diamonds$color, mean)
+tapply(diamonds$price, diamonds$color, median)
+tapply(diamonds$price, diamonds$color, sd)
+
+boxplot(price ~color, data = diamonds)
+
+```
+
+```{r}
+# Värden och kategorier - undersökning
+
+str(penguins)
+
+
+```
+
+# Signifikans
+
+## T-test 
+Signifikant samband mellan medelvärde och TVÅ kategorier 
+
+t.test(a ~ b, data = dataframe)
+
+t = antal standardavvikelser som skillnaden är. Högt = bra
+df = degrees of freedom. Högt = bra
+
+df > 100, t > 2 ger signifikant samband vid p<0,05
+
+95 percentage confidence = vi är 95 % säkra att skillnaden är någonstans mellan de här värdena
+
+cohens_d(a~ b, data = dataframe)
+
+## ANOVA
+
+Används för att jämföra medlevärde mellan FLER ÄN TVÅ kategorier
+
+aov_result <- aov(a ~b, data = dataframe)
+
+summary(aov_result)
+
+
+**Sum Sq (Sum of Squares)**
+
+- species: 52473 — variance *between* groups (how much group means differ from overall mean)
+- Residuals: 14953 — variance *within* groups (how much individuals differ from their group mean)
+
+Big between, small within = groups are clearly different.
+
+**Mean Sq (Mean Square)**
+
+Sum of squares divided by df. This standardizes for group size.
+
+- species: 52473 / 2 = 26237
+- Residuals: 14953 / 339 = 44
+
+**F value: 594.8**
+
+The ratio: between-group variance / within-group variance
+F = 26237 / 44 = 594.8
+
+Large F means groups differ much more than you'd expect from random variation. An F around 1 would suggest no real difference.
+Pr(>F): < 2e-16
+The p-value. 
+
+## Djupare 
+För att utröna VILKA grupper som skiljer sig åt
+
+TukeyHSD(aov_result)
+
+Effektstorlek
+
+eta_squared(aov_result)
+
+Saker att titta efter: Om lower och upper har olika tecken!! 
+
+```{r}
+# hur vill vi undersöka de olika dataseten?
+
+# df_tit
+
+#t.test(Fare~Survived, data = df_tit)
+
+# 
+# cohens_d(Fare~Survived, data = df_tit)
+
+# tapply(df_tit$Fare, list(df_tit$Sex, df_tit$Pclass), mean, na.rm = TRUE)
+
+df_tit$Pclass_f <- factor(df_tit$Pclass)
+ 
+aov_result <- aov(Fare ~Pclass_f, data = df_tit)
+
+# 
+summary(aov_result)
+# 
+TukeyHSD(aov_result)
+# 
+eta_squared(aov_result)
+
+```
+
+```{r}
+# hur vill vi undersöka de olika dataseten?
+
+# df_imdb
+
+aov_result_film <- aov(numVotes ~ratingGroup, data = df_imdb_clean)
+
+# 
+summary(aov_result_film)
+# 
+TukeyHSD(aov_result_film)
+# 
+eta_squared(aov_result_film)
+
+boxplot(numVotes~ratingGroup, data=df_imdb_clean)
+
+```
+
+```{r}
+# hur vill vi undersöka de olika dataseten?
+
+diamonds
+
+
+```
+
+```{r}
+# hur vill vi undersöka de olika dataseten?
+
+penguins
+
+
+```
+
+
+# Korrelation
+
+cor(df$kol1, df$kol2)
+
+## dataframe med intressanta kolumner
+
+ny_df <- gammal_df[, c("namn", "namn", "namn")]
+
+cor(ny_df)
+
+round(NN, 2) för färre decimaler
+
+
+```{r}
+# Leta korrelationer
+
+df_tit
+
+
+```
+
+```{r}
+# Leta korrelationer
+
+#cor(df_imdb_clean$runtimeMinutes, df_imdb_clean$budget)
+
+df_imdb_runtime <- df_imdb_clean[, c("runtimeMinutes", "budget", "gross", "averageRating")]
+
+cor(df_imdb_runtime)
+
+```
+
+```{r}
+# Leta korrelationer
+
+#diamonds
+
+plot(diamonds$carat, diamonds$price)
+```
+
+```{r}
+# Leta korrelationer
+
+penguins
+
+```
+
+## Linear regression
+
+Ger ett ungefärligt linjärt samband
+
+räta linjens ekvation: y = kx + m
+
+model <- lm(a~b, data = dataframe)
+summary(model)
+
+Intercept = beroende variabel när oberoende = 0
+Värdet under = hur mycket stiger beroende variabeln / ökning i oberoende (dvs: lutning)
+
+std.Error - mindre = mer precist och mer confident
+
+t anger lutningens proportion mot "noise", mot std.error.
+
+R-squared anger hur mycket beroende variabeln förklaras av den oberoende. 0-1
+
+F-statistic = ger signifikans. 
+
+coef(model) ger linjär modell.
+
+predict(model, data.frame(a = N))
+
+# Base R
+plot(diamonds$carat, diamonds$price)
+abline(model, col = "red")
+
+# ggplot2
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point(alpha = 0.1) +
+  geom_smooth(method = "lm", color = "red")
+  
+  
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+  
+```{r}
+#names(penguins_clean)
+
+penguins_beak <- lm(flipper_length_mm~bill_length_mm, data = penguins_clean)
+summary(penguins_beak)
+
+plot(penguins_clean$bill_length_mm, penguins_clean$flipper_length_mm)
+abline(penguins_beak)
+```
+
+# Multiple regression
+
+model2 = lm(a ~b+c+d+e, data = dataframe)
+summary(model2)
+
+Ger coefficienter, fel och t-värde som ovan, fast uppdelat. 
+
+kan jämföra modeller med anova(model1, model2)
+
+# Logistic regression
+
+model <- glm(a~b, data = dataframe, family = "binomial")
+summary(model)
+
+The Estimate: If the number for Fare is positive, it means as Fare goes up, the chance of surviving goes up.
+
+The P-value: Look at the stars ***. If you see them, money definitely mattered on the Titanic
+
+```{r}
+tit_model <- glm(Survived ~Fare+Age+Sex, data = df_tit_clean, family="binomial")
+#summary(tit_model)
+
+# new_passenger <- data.frame(Fare = 15, Age = 30, Sex = "female")
+# predict(tit_model, newdata = new_passenger, type = "response")
+
+scenarios <- data.frame(
+  Fare = c(100,30),
+  Age = c(60,20),
+  Sex = c("male","female")
+)
+
+predict(tit_model, newdata = scenarios, type = "response")
+
+```
+
+

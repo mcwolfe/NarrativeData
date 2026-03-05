@@ -1,0 +1,103 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_knit$set(root.dir = "../R-test")  # Set root directory
+library(pwr)
+df <- read.csv("titanic.csv")
+
+```
+
+```{r}
+pwr.chisq.test(
+  w = NULL,           # effect size (0.1 = small, 0.3 = medium, 0.5 = large)
+  N = 63,          # what we want to find out
+  df = 2,            # degrees of freedom: (rows-1) * (cols-1)
+  sig.level = 0.05,  # conventional alpha
+  power = 0.80       # conventional power
+)
+```
+```{r}
+pwr.t.test(
+  d = 0.5,           # effect size (Cohen's d)
+  sig.level = 0.05,
+  power = 0.80,
+  type = "two.sample"
+)
+```
+Här arbetar vi baklänges, vi vet hur stort urval vi kan tänkas få (50), och så vill vi veta hur stor effekt vi vill kunna mäta
+
+```{r}
+pwr.chisq.test(
+  w = NULL,          # what we want to find out
+  N = 50,
+  df = 2,
+  sig.level = 0.05,
+  power = 0.80
+)
+```
+
+```{r}
+summary(df)
+str(df)
+head(df, 20)
+hist(df$Age)
+
+```
+```{r}
+sum(duplicated(df))
+```
+
+```{r}
+# Age groups from continuous age
+df$age_group <- cut(df$Age, 
+                    breaks = c(0, 10, 18, 25, 35, 45, 100),
+                    labels = c("child", "teen", "Under 25", "25-34", "35-44", "45+"))
+
+# Total score from multiple Likert items
+#df$satisfaction_total <- df$sat_q1 + df$sat_q2 + df$sat_q3
+
+# Recode into binary
+df$sex_numeric <- ifelse(df$Sex == "male", 1, 0)
+```
+
+```{r}
+df$SurvivedLabels <- factor(df$Survived, levels = c(0, 1), labels = c("No", "Yes"))
+```
+
+```{r}
+head(df,10)
+table(df$age_group)
+```
+```{r}
+ageSurvSex_t = table(df$age_group, df$SurvivedLabels, df$Sex)
+
+ftable(ageSurvSex_t)
+
+mosaicplot(ageSurvSex_t)
+```
+# Effektstorlek
+```{r}
+library(rcompanion)
+```
+
+```{r}
+sexSurv_t <- table(df$Sex, df$Survived)
+chisq.test(sexSurv_t)
+cramerV(sexSurv_t)
+```
+
+
+```{r}
+sexClass_t <- table(df$Sex, df$Pclass)
+chisq.test(sexClass_t)
+cramerV(sexClass_t)
+```
+
+
