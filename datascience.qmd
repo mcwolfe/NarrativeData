@@ -1,0 +1,28 @@
+
+---
+title: "Data Science"
+engine: jupyter 
+kernel: Math_lab
+---
+
+```{julia}
+import Pkg
+```
+
+```{julia}
+using Statistics
+x = [1.0, 2.2, 3.5, 4.8, 5.1]
+mean(x)
+```
+
+```{r}
+x <- c(1.0, 2.2, 3.5, 4.8, 5.1)
+mean(x)
+```
+
+```{python}
+import math
+import networkx
+print(f"Square root of 144 is {math.sqrt(144)}")
+```
+
