@@ -27,7 +27,7 @@ Mockingbird,20,20,6,10,20,6,6,Human,0,20,0,Hero
 Nightcrawler,20,50,6,30,10,20,20,Mutant,0,0,0,Hero
 Northstar,20,20,20,30,6,6,10,Mutant,3000,0,0,Hero
 Phoenix,10,10,10,40,10,30,75,Mutant,0,0,50,Hero
-Professor X,4,10,6,30,40,50,75,Mutant,0,100,0,Hero
+Professor X,4,10,6,30,40,50,75,Mutant,0,0,100,Hero
 Puck,40,20,10,20,6,20,30,Superhuman,0,0,0,Hero
 Rogue,10,20,50,10,6,10,4,Mutant,20,40,0,Hero
 Shadowcat,20,10,6,20,30,10,6,Mutant,0,0,0,Hero
@@ -92,7 +92,6 @@ Trapster,4,10,4,10,20,10,10,Technological,0,0,0,Villain
 Sandman,30,30,40,75,6,10,30,Superhuman,0,50,0,Villain
 Black Cat,10,20,6,20,10,10,20,Human,0,0,0,Hero
 Cobra,30,75,10,30,10,10,20,Superhuman,0,10,0,Villain
-Dagger,20,20,6,30,10,10,10,Superhuman,0,0,20,Hero
 Electra,40,30,10,30,10,40,20,Human,0,0,0,Hero
 Fly,20,40,30,40,10,75,10,Superhuman,10,0,50,Villain
 Gladiator,30,20,20,30,6,10,6,Technological,0,10,30,Villain
