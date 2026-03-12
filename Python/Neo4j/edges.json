@@ -1,0 +1,534 @@
+[
+  {
+    "from": "OB001",
+    "to": "PL002",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB009",
+    "to": "PL002",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": "Same context as OB001"
+  },
+  {
+    "from": "OB011",
+    "to": "PL002",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": "Post-fire layer"
+  },
+  {
+    "from": "OB002",
+    "to": "PL004",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB003",
+    "to": "PL004",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB006",
+    "to": "PL004",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB013",
+    "to": "PL004",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB004",
+    "to": "PL001",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB005",
+    "to": "PL001",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB010",
+    "to": "PL001",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB012",
+    "to": "PL007",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB014",
+    "to": "PL007",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB008",
+    "to": "PL002",
+    "type": "FOUND_AT",
+    "confidence": "high",
+    "notes": "Wharf context"
+  },
+  {
+    "from": "OB007",
+    "to": "PL006",
+    "type": "FOUND_AT",
+    "confidence": "low",
+    "notes": "DIRTY: catalog uncertain"
+  },
+  {
+    "from": "OB015",
+    "to": "PL006",
+    "type": "FOUND_AT",
+    "confidence": "low",
+    "notes": "DIRTY: no location recorded \u2014 inferred from catalogue batch"
+  },
+  {
+    "from": "OB001",
+    "to": "MA001",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB007",
+    "to": "MA001",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB011",
+    "to": "MA001",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB015",
+    "to": "MA001",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB002",
+    "to": "MA002",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB013",
+    "to": "MA002",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB003",
+    "to": "MA003",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB012",
+    "to": "MA003",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB004",
+    "to": "MA004",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB010",
+    "to": "MA004",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB005",
+    "to": "MA005",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB014",
+    "to": "MA005",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB009",
+    "to": "MA006",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB006",
+    "to": "MA008",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "OB008",
+    "to": "MA007",
+    "type": "MADE_FROM",
+    "confidence": "high",
+    "notes": "ANOMALY: only amber object"
+  },
+  {
+    "from": "OB001",
+    "to": "PE009",
+    "type": "MADE_BY",
+    "confidence": "medium",
+    "notes": "Attributed by style"
+  },
+  {
+    "from": "OB004",
+    "to": "PE004",
+    "type": "MADE_BY",
+    "confidence": "medium",
+    "notes": "Tool marks \u2014 unnamed coppersmith"
+  },
+  {
+    "from": "OB010",
+    "to": "PE004",
+    "type": "MADE_BY",
+    "confidence": "medium",
+    "notes": "Same tool marks as OB004"
+  },
+  {
+    "from": "OB003",
+    "to": "PE002",
+    "type": "MADE_BY",
+    "confidence": "high",
+    "notes": "Documentary evidence"
+  },
+  {
+    "from": "OB006",
+    "to": "PE001",
+    "type": "MADE_BY",
+    "confidence": "medium",
+    "notes": "Initials HB on seal"
+  },
+  {
+    "from": "PE001",
+    "to": "PL004",
+    "type": "LIVED_AT",
+    "confidence": "high",
+    "notes": "German quarter"
+  },
+  {
+    "from": "PE007",
+    "to": "PL004",
+    "type": "LIVED_AT",
+    "confidence": "high",
+    "notes": "German quarter"
+  },
+  {
+    "from": "PE002",
+    "to": "PL007",
+    "type": "WORKED_AT",
+    "confidence": "high",
+    "notes": "Tanner district"
+  },
+  {
+    "from": "PE009",
+    "to": "PL006",
+    "type": "WORKED_AT",
+    "confidence": "high",
+    "notes": "J\u00e4rntorget blacksmith"
+  },
+  {
+    "from": "PE003",
+    "to": "PL003",
+    "type": "ASSOCIATED_WITH",
+    "confidence": "high",
+    "notes": "City official, Storkyrkan records"
+  },
+  {
+    "from": "PE005",
+    "to": "PL001",
+    "type": "WORKED_AT",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "from": "PE006",
+    "to": "PL003",
+    "type": "ASSOCIATED_WITH",
+    "confidence": "low",
+    "notes": "DIRTY: uncertain which Brother Olof"
+  },
+  {
+    "from": "PE001",
+    "to": "EV002",
+    "type": "PRESENT_AT",
+    "confidence": "high",
+    "notes": "Named in records"
+  },
+  {
+    "from": "PE007",
+    "to": "EV002",
+    "type": "PRESENT_AT",
+    "confidence": "high",
+    "notes": "Named in records"
+  },
+  {
+    "from": "PE003",
+    "to": "EV002",
+    "type": "PRESENT_AT",
+    "confidence": "medium",
+    "notes": "Probable as city official"
+  },
+  {
+    "from": "PE001",
+    "to": "EV003",
+    "type": "PRESENT_AT",
+    "confidence": "high",
+    "notes": "His own burial"
+  },
+  {
+    "from": "PE002",
+    "to": "EV004",
+    "type": "PRESENT_AT",
+    "confidence": "high",
+    "notes": "Textile market"
+  },
+  {
+    "from": "PE005",
+    "to": "EV004",
+    "type": "PRESENT_AT",
+    "confidence": "medium",
+    "notes": ""
+  },
+  {
+    "from": "PE006",
+    "to": "EV005",
+    "type": "PRESENT_AT",
+    "confidence": "low",
+    "notes": "DIRTY: uncertain"
+  },
+  {
+    "from": "PE008",
+    "to": "EV007",
+    "type": "PRESENT_AT",
+    "confidence": "low",
+    "notes": "Only connection for Ingrid \u2014 one document"
+  },
+  {
+    "from": "PE009",
+    "to": "EV008",
+    "type": "PRESENT_AT",
+    "confidence": "high",
+    "notes": "Guild founder"
+  },
+  {
+    "from": "EV001",
+    "to": "PL002",
+    "type": "OCCURRED_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "EV002",
+    "to": "PL005",
+    "type": "OCCURRED_AT",
+    "confidence": "high",
+    "notes": "Tyska Kyrkan"
+  },
+  {
+    "from": "EV003",
+    "to": "PL005",
+    "type": "OCCURRED_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "EV004",
+    "to": "PL001",
+    "type": "OCCURRED_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "EV005",
+    "to": "PL003",
+    "type": "OCCURRED_AT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "EV006",
+    "to": "PL009",
+    "type": "OCCURRED_AT",
+    "confidence": "medium",
+    "notes": "Northern suburb hit first"
+  },
+  {
+    "from": "EV007",
+    "to": "PL008",
+    "type": "OCCURRED_AT",
+    "confidence": "low",
+    "notes": "DIRTY: Riddarhuset area \u2014 incomplete excavation"
+  },
+  {
+    "from": "EV008",
+    "to": "PL006",
+    "type": "OCCURRED_AT",
+    "confidence": "high",
+    "notes": "J\u00e4rntorget"
+  },
+  {
+    "from": "EV001",
+    "to": "TP002",
+    "type": "OCCURRED_DURING",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "EV002",
+    "to": "TP002",
+    "type": "OCCURRED_DURING",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "EV003",
+    "to": "TP002",
+    "type": "OCCURRED_DURING",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "EV004",
+    "to": "TP002",
+    "type": "OCCURRED_DURING",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "EV005",
+    "to": "TP001",
+    "type": "OCCURRED_DURING",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "EV006",
+    "to": "TP002",
+    "type": "OCCURRED_DURING",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "EV007",
+    "to": "TP002",
+    "type": "OCCURRED_DURING",
+    "confidence": "low",
+    "notes": "DIRTY: date unknown, assigned by inference"
+  },
+  {
+    "from": "EV008",
+    "to": "TP001",
+    "type": "OCCURRED_DURING",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "from": "PL001",
+    "to": "PL002",
+    "type": "CONNECTED_TO",
+    "confidence": "high",
+    "notes": "Street leads to harbour"
+  },
+  {
+    "from": "PL001",
+    "to": "PL006",
+    "type": "CONNECTED_TO",
+    "confidence": "high",
+    "notes": "Adjacent squares"
+  },
+  {
+    "from": "PL004",
+    "to": "PL005",
+    "type": "CONNECTED_TO",
+    "confidence": "high",
+    "notes": "German street to German church"
+  },
+  {
+    "from": "PL006",
+    "to": "PL007",
+    "type": "CONNECTED_TO",
+    "confidence": "medium",
+    "notes": "Iron market near tanner district"
+  },
+  {
+    "from": "PL003",
+    "to": "PL001",
+    "type": "CONNECTED_TO",
+    "confidence": "high",
+    "notes": "Church on merchant street"
+  },
+  {
+    "from": "OB004",
+    "to": "OB010",
+    "type": "SIMILAR_TO",
+    "confidence": "medium",
+    "notes": "Same tool marks, probably same workshop"
+  },
+  {
+    "from": "OB003",
+    "to": "OB012",
+    "type": "SIMILAR_TO",
+    "confidence": "low",
+    "notes": "Both wool textiles but different weave \u2014 different workshops?"
+  },
+  {
+    "from": "OB001",
+    "to": "OB007",
+    "type": "SIMILAR_TO",
+    "confidence": "medium",
+    "notes": "Iron, similar period"
+  },
+  {
+    "from": "OB002",
+    "to": "OB013",
+    "type": "SIMILAR_TO",
+    "confidence": "low",
+    "notes": "Both silver, both German quarter"
+  }
+]

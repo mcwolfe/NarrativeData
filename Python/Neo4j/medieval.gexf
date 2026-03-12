@@ -1,0 +1,663 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-03-11">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="1" title="confidence" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="node_type" type="string" />
+    </attributes>
+    <nodes>
+      <node id="TP001" label="Early Medieval Stockholm">
+        <attvalues>
+          <attvalue for="0" value="TimePeriod" />
+        </attvalues>
+      </node>
+      <node id="TP002" label="Late Medieval Stockholm">
+        <attvalues>
+          <attvalue for="0" value="TimePeriod" />
+        </attvalues>
+      </node>
+      <node id="TP003" label="Engelbrekt Era">
+        <attvalues>
+          <attvalue for="0" value="TimePeriod" />
+        </attvalues>
+      </node>
+      <node id="TP004" label="Union Period">
+        <attvalues>
+          <attvalue for="0" value="TimePeriod" />
+        </attvalues>
+      </node>
+      <node id="PL001" label="Köpmangatan">
+        <attvalues>
+          <attvalue for="0" value="Place" />
+        </attvalues>
+      </node>
+      <node id="PL002" label="Stadsholmen Wharf">
+        <attvalues>
+          <attvalue for="0" value="Place" />
+        </attvalues>
+      </node>
+      <node id="PL003" label="Storkyrkan">
+        <attvalues>
+          <attvalue for="0" value="Place" />
+        </attvalues>
+      </node>
+      <node id="PL004" label="Själagårdsbacken">
+        <attvalues>
+          <attvalue for="0" value="Place" />
+        </attvalues>
+      </node>
+      <node id="PL005" label="Tyska Kyrkan">
+        <attvalues>
+          <attvalue for="0" value="Place" />
+        </attvalues>
+      </node>
+      <node id="PL006" label="Järntorget">
+        <attvalues>
+          <attvalue for="0" value="Place" />
+        </attvalues>
+      </node>
+      <node id="PL007" label="Skinnarbacken">
+        <attvalues>
+          <attvalue for="0" value="Place" />
+        </attvalues>
+      </node>
+      <node id="PL008" label="Riddarhuset area">
+        <attvalues>
+          <attvalue for="0" value="Place" />
+        </attvalues>
+      </node>
+      <node id="PL009" label="Norra Förstaden">
+        <attvalues>
+          <attvalue for="0" value="Place" />
+        </attvalues>
+      </node>
+      <node id="PE001" label="Heinrich Bremer">
+        <attvalues>
+          <attvalue for="0" value="Person" />
+        </attvalues>
+      </node>
+      <node id="PE002" label="Birgitta Månsdotter">
+        <attvalues>
+          <attvalue for="0" value="Person" />
+        </attvalues>
+      </node>
+      <node id="PE003" label="Magnus Kettilmundsson">
+        <attvalues>
+          <attvalue for="0" value="Person" />
+        </attvalues>
+      </node>
+      <node id="PE004" label="Unknown Coppersmith">
+        <attvalues>
+          <attvalue for="0" value="Person" />
+        </attvalues>
+      </node>
+      <node id="PE005" label="Katerina Hansdotter">
+        <attvalues>
+          <attvalue for="0" value="Person" />
+        </attvalues>
+      </node>
+      <node id="PE006" label="Brother Olof">
+        <attvalues>
+          <attvalue for="0" value="Person" />
+        </attvalues>
+      </node>
+      <node id="PE007" label="Gottfried van Aken">
+        <attvalues>
+          <attvalue for="0" value="Person" />
+        </attvalues>
+      </node>
+      <node id="PE008" label="Ingrid Petersdotter">
+        <attvalues>
+          <attvalue for="0" value="Person" />
+        </attvalues>
+      </node>
+      <node id="PE009" label="Lars Smed">
+        <attvalues>
+          <attvalue for="0" value="Person" />
+        </attvalues>
+      </node>
+      <node id="MA001" label="Iron">
+        <attvalues>
+          <attvalue for="0" value="Material" />
+        </attvalues>
+      </node>
+      <node id="MA002" label="Silver">
+        <attvalues>
+          <attvalue for="0" value="Material" />
+        </attvalues>
+      </node>
+      <node id="MA003" label="Wool">
+        <attvalues>
+          <attvalue for="0" value="Material" />
+        </attvalues>
+      </node>
+      <node id="MA004" label="Copper alloy">
+        <attvalues>
+          <attvalue for="0" value="Material" />
+        </attvalues>
+      </node>
+      <node id="MA005" label="Bone">
+        <attvalues>
+          <attvalue for="0" value="Material" />
+        </attvalues>
+      </node>
+      <node id="MA006" label="Oak">
+        <attvalues>
+          <attvalue for="0" value="Material" />
+        </attvalues>
+      </node>
+      <node id="MA007" label="Baltic amber">
+        <attvalues>
+          <attvalue for="0" value="Material" />
+        </attvalues>
+      </node>
+      <node id="MA008" label="Lead">
+        <attvalues>
+          <attvalue for="0" value="Material" />
+        </attvalues>
+      </node>
+      <node id="EV001" label="Great Wharf Fire">
+        <attvalues>
+          <attvalue for="0" value="Event" />
+        </attvalues>
+      </node>
+      <node id="EV002" label="Hanseatic Trade Summit">
+        <attvalues>
+          <attvalue for="0" value="Event" />
+        </attvalues>
+      </node>
+      <node id="EV003" label="Burial of Heinrich Bremer">
+        <attvalues>
+          <attvalue for="0" value="Event" />
+        </attvalues>
+      </node>
+      <node id="EV004" label="Textile Market 1325">
+        <attvalues>
+          <attvalue for="0" value="Event" />
+        </attvalues>
+      </node>
+      <node id="EV005" label="Church Consecration">
+        <attvalues>
+          <attvalue for="0" value="Event" />
+        </attvalues>
+      </node>
+      <node id="EV006" label="Plague Arrival">
+        <attvalues>
+          <attvalue for="0" value="Event" />
+        </attvalues>
+      </node>
+      <node id="EV007" label="Unknown Ceremony">
+        <attvalues>
+          <attvalue for="0" value="Event" />
+        </attvalues>
+      </node>
+      <node id="EV008" label="Ironworkers Guild Founded">
+        <attvalues>
+          <attvalue for="0" value="Event" />
+        </attvalues>
+      </node>
+      <node id="OB001" label="Iron sword fragment">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB002" label="Silver brooch">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB003" label="Wool textile fragment">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB004" label="Copper alloy scales">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB005" label="Bone comb">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB006" label="Lead merchant seal">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB007" label="Iron key">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB008" label="Amber bead">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB009" label="Oak barrel stave">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB010" label="Copper alloy pin">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB011" label="Iron nail collection">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB012" label="Textile fragment (wool)">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB013" label="Silver coin (Lübeck)">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB014" label="Bone needle">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+      <node id="OB015" label="Iron cauldron fragment">
+        <attvalues>
+          <attvalue for="0" value="Object" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="PL001" target="PL002" id="0" label="CONNECTED_TO">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PL001" target="PL006" id="1" label="CONNECTED_TO">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PL003" target="PL001" id="2" label="CONNECTED_TO">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PL004" target="PL005" id="3" label="CONNECTED_TO">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PL006" target="PL007" id="4" label="CONNECTED_TO">
+        <attvalues>
+          <attvalue for="1" value="medium" />
+        </attvalues>
+      </edge>
+      <edge source="PE001" target="PL004" id="5" label="LIVED_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PE001" target="EV002" id="6" label="PRESENT_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PE001" target="EV003" id="7" label="PRESENT_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PE002" target="PL007" id="8" label="WORKED_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PE002" target="EV004" id="9" label="PRESENT_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PE003" target="PL003" id="10" label="ASSOCIATED_WITH">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PE003" target="EV002" id="11" label="PRESENT_AT">
+        <attvalues>
+          <attvalue for="1" value="medium" />
+        </attvalues>
+      </edge>
+      <edge source="PE005" target="PL001" id="12" label="WORKED_AT">
+        <attvalues>
+          <attvalue for="1" value="medium" />
+        </attvalues>
+      </edge>
+      <edge source="PE005" target="EV004" id="13" label="PRESENT_AT">
+        <attvalues>
+          <attvalue for="1" value="medium" />
+        </attvalues>
+      </edge>
+      <edge source="PE006" target="PL003" id="14" label="ASSOCIATED_WITH">
+        <attvalues>
+          <attvalue for="1" value="low" />
+        </attvalues>
+      </edge>
+      <edge source="PE006" target="EV005" id="15" label="PRESENT_AT">
+        <attvalues>
+          <attvalue for="1" value="low" />
+        </attvalues>
+      </edge>
+      <edge source="PE007" target="PL004" id="16" label="LIVED_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PE007" target="EV002" id="17" label="PRESENT_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PE008" target="EV007" id="18" label="PRESENT_AT">
+        <attvalues>
+          <attvalue for="1" value="low" />
+        </attvalues>
+      </edge>
+      <edge source="PE009" target="PL006" id="19" label="WORKED_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="PE009" target="EV008" id="20" label="PRESENT_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV001" target="PL002" id="21" label="OCCURRED_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV001" target="TP002" id="22" label="OCCURRED_DURING">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV002" target="PL005" id="23" label="OCCURRED_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV002" target="TP002" id="24" label="OCCURRED_DURING">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV003" target="PL005" id="25" label="OCCURRED_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV003" target="TP002" id="26" label="OCCURRED_DURING">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV004" target="PL001" id="27" label="OCCURRED_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV004" target="TP002" id="28" label="OCCURRED_DURING">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV005" target="PL003" id="29" label="OCCURRED_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV005" target="TP001" id="30" label="OCCURRED_DURING">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV006" target="PL009" id="31" label="OCCURRED_AT">
+        <attvalues>
+          <attvalue for="1" value="medium" />
+        </attvalues>
+      </edge>
+      <edge source="EV006" target="TP002" id="32" label="OCCURRED_DURING">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV007" target="PL008" id="33" label="OCCURRED_AT">
+        <attvalues>
+          <attvalue for="1" value="low" />
+        </attvalues>
+      </edge>
+      <edge source="EV007" target="TP002" id="34" label="OCCURRED_DURING">
+        <attvalues>
+          <attvalue for="1" value="low" />
+        </attvalues>
+      </edge>
+      <edge source="EV008" target="PL006" id="35" label="OCCURRED_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="EV008" target="TP001" id="36" label="OCCURRED_DURING">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB001" target="PL002" id="37" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB001" target="MA001" id="38" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB001" target="PE009" id="39" label="MADE_BY">
+        <attvalues>
+          <attvalue for="1" value="medium" />
+        </attvalues>
+      </edge>
+      <edge source="OB001" target="OB007" id="40" label="SIMILAR_TO">
+        <attvalues>
+          <attvalue for="1" value="medium" />
+        </attvalues>
+      </edge>
+      <edge source="OB002" target="PL004" id="41" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB002" target="MA002" id="42" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB002" target="OB013" id="43" label="SIMILAR_TO">
+        <attvalues>
+          <attvalue for="1" value="low" />
+        </attvalues>
+      </edge>
+      <edge source="OB003" target="PL004" id="44" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB003" target="MA003" id="45" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB003" target="PE002" id="46" label="MADE_BY">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB003" target="OB012" id="47" label="SIMILAR_TO">
+        <attvalues>
+          <attvalue for="1" value="low" />
+        </attvalues>
+      </edge>
+      <edge source="OB004" target="PL001" id="48" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB004" target="MA004" id="49" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB004" target="PE004" id="50" label="MADE_BY">
+        <attvalues>
+          <attvalue for="1" value="medium" />
+        </attvalues>
+      </edge>
+      <edge source="OB004" target="OB010" id="51" label="SIMILAR_TO">
+        <attvalues>
+          <attvalue for="1" value="medium" />
+        </attvalues>
+      </edge>
+      <edge source="OB005" target="PL001" id="52" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB005" target="MA005" id="53" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB006" target="PL004" id="54" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB006" target="MA008" id="55" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB006" target="PE001" id="56" label="MADE_BY">
+        <attvalues>
+          <attvalue for="1" value="medium" />
+        </attvalues>
+      </edge>
+      <edge source="OB007" target="PL006" id="57" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="low" />
+        </attvalues>
+      </edge>
+      <edge source="OB007" target="MA001" id="58" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB008" target="PL002" id="59" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB008" target="MA007" id="60" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB009" target="PL002" id="61" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB009" target="MA006" id="62" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB010" target="PL001" id="63" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB010" target="MA004" id="64" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB010" target="PE004" id="65" label="MADE_BY">
+        <attvalues>
+          <attvalue for="1" value="medium" />
+        </attvalues>
+      </edge>
+      <edge source="OB011" target="PL002" id="66" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB011" target="MA001" id="67" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB012" target="PL007" id="68" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB012" target="MA003" id="69" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB013" target="PL004" id="70" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB013" target="MA002" id="71" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB014" target="PL007" id="72" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB014" target="MA005" id="73" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+      <edge source="OB015" target="PL006" id="74" label="FOUND_AT">
+        <attvalues>
+          <attvalue for="1" value="low" />
+        </attvalues>
+      </edge>
+      <edge source="OB015" target="MA001" id="75" label="MADE_FROM">
+        <attvalues>
+          <attvalue for="1" value="high" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

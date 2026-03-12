@@ -1,0 +1,466 @@
+[
+  {
+    "id": "TP001",
+    "label": "TimePeriod",
+    "name": "Early Medieval Stockholm",
+    "start": 1200,
+    "end": 1299,
+    "notes": ""
+  },
+  {
+    "id": "TP002",
+    "label": "TimePeriod",
+    "name": "Late Medieval Stockholm",
+    "start": 1300,
+    "end": 1399,
+    "notes": ""
+  },
+  {
+    "id": "TP003",
+    "label": "TimePeriod",
+    "name": "Engelbrekt Era",
+    "start": 1400,
+    "end": 1450,
+    "notes": "Period of civic unrest"
+  },
+  {
+    "id": "TP004",
+    "label": "TimePeriod",
+    "name": "Union Period",
+    "start": 1450,
+    "end": 1523,
+    "notes": "Kalmar Union dominates"
+  },
+  {
+    "id": "PL001",
+    "label": "Place",
+    "name": "K\u00f6pmangatan",
+    "type": "street",
+    "parish": "Storkyrkan",
+    "notes": "Main merchant street"
+  },
+  {
+    "id": "PL002",
+    "label": "Place",
+    "name": "Stadsholmen Wharf",
+    "type": "harbour",
+    "parish": null,
+    "notes": "Primary trading harbour \u2014 parish unclear"
+  },
+  {
+    "id": "PL003",
+    "label": "Place",
+    "name": "Storkyrkan",
+    "type": "church",
+    "parish": "Storkyrkan",
+    "notes": ""
+  },
+  {
+    "id": "PL004",
+    "label": "Place",
+    "name": "Sj\u00e4lag\u00e5rdsbacken",
+    "type": "street",
+    "parish": "Tyska",
+    "notes": "German merchant quarter"
+  },
+  {
+    "id": "PL005",
+    "label": "Place",
+    "name": "Tyska Kyrkan",
+    "type": "church",
+    "parish": "Tyska",
+    "notes": "German church, Hanseatic"
+  },
+  {
+    "id": "PL006",
+    "label": "Place",
+    "name": "J\u00e4rntorget",
+    "type": "square",
+    "parish": "Storkyrkan",
+    "notes": "Iron market square"
+  },
+  {
+    "id": "PL007",
+    "label": "Place",
+    "name": "Skinnarbacken",
+    "type": "workshop",
+    "parish": "Unknown",
+    "notes": "Tanner district \u2014 parish not recorded"
+  },
+  {
+    "id": "PL008",
+    "label": "Place",
+    "name": "Riddarhuset area",
+    "type": "district",
+    "parish": null,
+    "notes": "MISSING DATA \u2014 excavation incomplete"
+  },
+  {
+    "id": "PL009",
+    "label": "Place",
+    "name": "Norra F\u00f6rstaden",
+    "type": "suburb",
+    "parish": "Klara",
+    "notes": "Northern suburb outside walls"
+  },
+  {
+    "id": "PE001",
+    "label": "Person",
+    "name": "Heinrich Bremer",
+    "role": "merchant",
+    "origin": "L\u00fcbeck",
+    "active_from": 1320,
+    "active_to": 1355,
+    "notes": "Hanseatic trader, well documented"
+  },
+  {
+    "id": "PE002",
+    "label": "Person",
+    "name": "Birgitta M\u00e5nsdotter",
+    "role": "craftsperson",
+    "origin": "Stockholm",
+    "active_from": 1310,
+    "active_to": 1340,
+    "notes": "Textile worker, unusually well attested for a woman"
+  },
+  {
+    "id": "PE003",
+    "label": "Person",
+    "name": "Magnus Kettilmundsson",
+    "role": "official",
+    "origin": "Stockholm",
+    "active_from": 1300,
+    "active_to": 1325,
+    "notes": "City official"
+  },
+  {
+    "id": "PE004",
+    "label": "Person",
+    "name": "Unknown Coppersmith",
+    "role": "craftsperson",
+    "origin": null,
+    "active_from": null,
+    "active_to": null,
+    "notes": "DIRTY: inferred from tool marks on objects, never named in records"
+  },
+  {
+    "id": "PE005",
+    "label": "Person",
+    "name": "Katerina Hansdotter",
+    "role": "merchant",
+    "origin": "Stockholm",
+    "active_from": 1380,
+    "active_to": 1410,
+    "notes": ""
+  },
+  {
+    "id": "PE006",
+    "label": "Person",
+    "name": "Brother Olof",
+    "role": "clergy",
+    "origin": "Unknown",
+    "active_from": 1250,
+    "active_to": 1290,
+    "notes": "DIRTY: dates uncertain, possibly two different persons with same name"
+  },
+  {
+    "id": "PE007",
+    "label": "Person",
+    "name": "Gottfried van Aken",
+    "role": "merchant",
+    "origin": "Cologne",
+    "active_from": 1340,
+    "active_to": 1370,
+    "notes": "German merchant, Tyska Kyrkan records"
+  },
+  {
+    "id": "PE008",
+    "label": "Person",
+    "name": "Ingrid Petersdotter",
+    "role": "unknown",
+    "origin": "Unknown",
+    "active_from": null,
+    "active_to": null,
+    "notes": "DIRTY: appears in one document only, role and dates unknown"
+  },
+  {
+    "id": "PE009",
+    "label": "Person",
+    "name": "Lars Smed",
+    "role": "craftsperson",
+    "origin": "Stockholm",
+    "active_from": 1290,
+    "active_to": 1320,
+    "notes": "Blacksmith, J\u00e4rntorget area"
+  },
+  {
+    "id": "MA001",
+    "label": "Material",
+    "name": "Iron",
+    "origin": "Bergslagen",
+    "notes": ""
+  },
+  {
+    "id": "MA002",
+    "label": "Material",
+    "name": "Silver",
+    "origin": "Unknown",
+    "notes": "DIRTY: origin not recorded \u2014 could be German or domestic"
+  },
+  {
+    "id": "MA003",
+    "label": "Material",
+    "name": "Wool",
+    "origin": "Local",
+    "notes": ""
+  },
+  {
+    "id": "MA004",
+    "label": "Material",
+    "name": "Copper alloy",
+    "origin": "Unknown",
+    "notes": "Consistent with Hanseatic imports but unconfirmed"
+  },
+  {
+    "id": "MA005",
+    "label": "Material",
+    "name": "Bone",
+    "origin": "Local",
+    "notes": ""
+  },
+  {
+    "id": "MA006",
+    "label": "Material",
+    "name": "Oak",
+    "origin": "Local",
+    "notes": ""
+  },
+  {
+    "id": "MA007",
+    "label": "Material",
+    "name": "Baltic amber",
+    "origin": "Baltic",
+    "notes": "ANOMALY: appears only once \u2014 unexpected for a trading city"
+  },
+  {
+    "id": "MA008",
+    "label": "Material",
+    "name": "Lead",
+    "origin": "Unknown",
+    "notes": ""
+  },
+  {
+    "id": "EV001",
+    "label": "Event",
+    "name": "Great Wharf Fire",
+    "type": "disaster",
+    "year": 1334,
+    "notes": "Destroyed warehouse district"
+  },
+  {
+    "id": "EV002",
+    "label": "Event",
+    "name": "Hanseatic Trade Summit",
+    "type": "commerce",
+    "year": 1318,
+    "notes": "German merchants negotiate trading rights"
+  },
+  {
+    "id": "EV003",
+    "label": "Event",
+    "name": "Burial of Heinrich Bremer",
+    "type": "burial",
+    "year": 1355,
+    "notes": ""
+  },
+  {
+    "id": "EV004",
+    "label": "Event",
+    "name": "Textile Market 1325",
+    "type": "commerce",
+    "year": 1325,
+    "notes": ""
+  },
+  {
+    "id": "EV005",
+    "label": "Event",
+    "name": "Church Consecration",
+    "type": "religious",
+    "year": 1264,
+    "notes": "Storkyrkan expanded"
+  },
+  {
+    "id": "EV006",
+    "label": "Event",
+    "name": "Plague Arrival",
+    "type": "disaster",
+    "year": 1350,
+    "notes": "Black Death reaches Stockholm"
+  },
+  {
+    "id": "EV007",
+    "label": "Event",
+    "name": "Unknown Ceremony",
+    "type": "unknown",
+    "year": null,
+    "notes": "DIRTY: referenced in one document, date and type unclear"
+  },
+  {
+    "id": "EV008",
+    "label": "Event",
+    "name": "Ironworkers Guild Founded",
+    "type": "civic",
+    "year": 1298,
+    "notes": ""
+  },
+  {
+    "id": "OB001",
+    "label": "Object",
+    "name": "Iron sword fragment",
+    "type": "weapon",
+    "condition": "fragmentary",
+    "date_found": 1978,
+    "catalog_no": "SSM-1978-0042",
+    "notes": ""
+  },
+  {
+    "id": "OB002",
+    "label": "Object",
+    "name": "Silver brooch",
+    "type": "jewellery",
+    "condition": "complete",
+    "date_found": 1991,
+    "catalog_no": "SSM-1991-0017",
+    "notes": "Maker unknown"
+  },
+  {
+    "id": "OB003",
+    "label": "Object",
+    "name": "Wool textile fragment",
+    "type": "textile",
+    "condition": "fragmentary",
+    "date_found": 1991,
+    "catalog_no": "SSM-1991-0018",
+    "notes": "Possibly linked to OB002 same excavation context"
+  },
+  {
+    "id": "OB004",
+    "label": "Object",
+    "name": "Copper alloy scales",
+    "type": "tool",
+    "condition": "complete",
+    "date_found": 2003,
+    "catalog_no": "SSM-2003-0005",
+    "notes": "Merchant scales"
+  },
+  {
+    "id": "OB005",
+    "label": "Object",
+    "name": "Bone comb",
+    "type": "personal",
+    "condition": "complete",
+    "date_found": 2003,
+    "catalog_no": "SSM-2003-0006",
+    "notes": ""
+  },
+  {
+    "id": "OB006",
+    "label": "Object",
+    "name": "Lead merchant seal",
+    "type": "document",
+    "condition": "complete",
+    "date_found": 1991,
+    "catalog_no": "SSM-1991-0019",
+    "notes": "Initials HB \u2014 probably Heinrich Bremer"
+  },
+  {
+    "id": "OB007",
+    "label": "Object",
+    "name": "Iron key",
+    "type": "tool",
+    "condition": "complete",
+    "date_found": 1965,
+    "catalog_no": "SSM-1965-0003",
+    "notes": "DIRTY: catalog entry damaged, find location uncertain"
+  },
+  {
+    "id": "OB008",
+    "label": "Object",
+    "name": "Amber bead",
+    "type": "jewellery",
+    "condition": "complete",
+    "date_found": 2015,
+    "catalog_no": "SSM-2015-0001",
+    "notes": "ANOMALY: only amber object in collection \u2014 trade route implications?"
+  },
+  {
+    "id": "OB009",
+    "label": "Object",
+    "name": "Oak barrel stave",
+    "type": "container",
+    "condition": "fragmentary",
+    "date_found": 1978,
+    "catalog_no": "SSM-1978-0043",
+    "notes": "Same context as OB001"
+  },
+  {
+    "id": "OB010",
+    "label": "Object",
+    "name": "Copper alloy pin",
+    "type": "personal",
+    "condition": "complete",
+    "date_found": 2003,
+    "catalog_no": "SSM-2003-0007",
+    "notes": "Possibly same maker as OB004 \u2014 tool marks similar"
+  },
+  {
+    "id": "OB011",
+    "label": "Object",
+    "name": "Iron nail collection",
+    "type": "construction",
+    "condition": "complete",
+    "date_found": 1978,
+    "catalog_no": "SSM-1978-0044",
+    "notes": "Post-fire context"
+  },
+  {
+    "id": "OB012",
+    "label": "Object",
+    "name": "Textile fragment (wool)",
+    "type": "textile",
+    "condition": "fragmentary",
+    "date_found": 2010,
+    "catalog_no": "SSM-2010-0002",
+    "notes": "Different weave from OB003 \u2014 different workshop?"
+  },
+  {
+    "id": "OB013",
+    "label": "Object",
+    "name": "Silver coin (L\u00fcbeck)",
+    "type": "coin",
+    "condition": "complete",
+    "date_found": 1991,
+    "catalog_no": "SSM-1991-0020",
+    "notes": "Hanseatic mint"
+  },
+  {
+    "id": "OB014",
+    "label": "Object",
+    "name": "Bone needle",
+    "type": "tool",
+    "condition": "complete",
+    "date_found": 2010,
+    "catalog_no": "SSM-2010-0003",
+    "notes": "Textile working tool \u2014 same context as OB012"
+  },
+  {
+    "id": "OB015",
+    "label": "Object",
+    "name": "Iron cauldron fragment",
+    "type": "vessel",
+    "condition": "fragmentary",
+    "date_found": 1965,
+    "catalog_no": "SSM-1965-0004",
+    "notes": "DIRTY: no find location recorded"
+  }
+]
