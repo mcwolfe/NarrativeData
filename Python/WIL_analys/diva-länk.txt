@@ -1,0 +1,2 @@
+https://www.diva-portal.org/smash/export.jsf?format=ris&addFilename=true&aq=[[{"freeText":"Work-Integrated Learning"}]]&aqe=[]&aq2=[[{"dateIssued":{"from":"2000","to":"2020"}},{"organisationId":"1852","organisationId-Xtra":false},{"language":"eng"},{"publicationTypeCode":["article","book","chapter","conferencePaper"]}]]&onlyFullText=false&noOfRows=1200&sortOrder=title_sort_asc&sortOrder2=title_sort_asc
+
