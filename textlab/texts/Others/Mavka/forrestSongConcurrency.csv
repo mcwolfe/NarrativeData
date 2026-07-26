@@ -1,0 +1,26 @@
+Character_A,Character_B,Shared_Interactions
+Lukash,Mavka,4
+Lukash,Mother,3
+Lukash,Kilina,2
+Lukash,Uncle Lev,2
+Mavka,Forest Elf,2
+Mavka,Kilina,2
+Mavka,Kutz,2
+Mavka,Mother,2
+Mavka,Rusalka,2
+Mavka,Will-o'-the-Wisp,2
+Mavka,He Who Dwells in Rock,2
+Kilina,Mother,2
+Kutz,Starvelings,1
+Kutz,Rusalka,1
+Rusalka,Water Goblin,1
+Rusalka,He Who Rends the Dikes,1
+Rusalka,Lost Babes,1
+He Who Rends the Dikes,Lost Babes,1
+He Who Rends the Dikes,Water Goblin,1
+Uncle Lev,Mother,1
+Mavka,Field Sprite,1
+Mavka,Boy (Kilina's Son),1
+Lukash,Boy (Kilina's Son),1
+Mother,Starvelings,1
+Kilina,Boy (Kilina's Son),1
