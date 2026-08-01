@@ -1,4 +1,4 @@
-Character_A,Character_B,Shared_Interactions
+Target,Source,Weight
 Lukash,Mavka,4
 Lukash,Mother,3
 Lukash,Kilina,2
